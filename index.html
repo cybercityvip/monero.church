@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<style>
+body { background-color: #000000; }
+h1 { text-align: center; }
+ascii { color: #ffffff; }
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+}
+</style>
+<ascii><pre><center>
+ ███▄ ▄███▓ ▒█████   ███▄    █ ▓█████  ██▀███   ▒█████        ▄████▄   ██░ ██  █    ██  ██▀███   ▄████▄   ██░ ██ 
+▓██▒▀█▀ ██▒▒██▒  ██▒ ██ ▀█   █ ▓█   ▀ ▓██ ▒ ██▒▒██▒  ██▒     ▒██▀ ▀█  ▓██░ ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓██░ ██▒
+▓██    ▓██░▒██░  ██▒▓██  ▀█ ██▒▒███   ▓██ ░▄█ ▒▒██░  ██▒     ▒▓█    ▄ ▒██▀▀██░▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒██▀▀██░
+▒██    ▒██ ▒██   ██░▓██▒  ▐▌██▒▒▓█  ▄ ▒██▀▀█▄  ▒██   ██░     ▒▓▓▄ ▄██▒░▓█ ░██ ▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒░▓█ ░██ 
+▒██▒   ░██▒░ ████▓▒░▒██░   ▓██░░▒████▒░██▓ ▒██▒░ ████▓▒░ ██▓ ▒ ▓███▀ ░░▓█▒░██▓▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▓█▒░██▓
+░ ▒░   ░  ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░▒░▒░  ▒▓▒ ░ ░▒ ▒  ░ ▒ ░░▒░▒░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░ ▒ ░░▒░▒
+░  ░      ░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░  ░▒ ░ ▒░  ░ ▒ ▒░  ░▒    ░  ▒    ▒ ░▒░ ░░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ▒ ░▒░ ░
+░      ░   ░ ░ ░ ▒     ░   ░ ░    ░     ░░   ░ ░ ░ ░ ▒   ░   ░         ░  ░░ ░ ░░░ ░ ░   ░░   ░ ░         ░  ░░ ░
+       ░       ░ ░           ░    ░  ░   ░         ░ ░    ░  ░ ░       ░  ░  ░   ░        ░     ░ ░       ░  ░  ░
+  ░  ░                                  ░                
+</ascii></pre></center>
+<h1>A free xmpp/jabber service</h1>
+<ul>
+  <li> - running Prosody 0.11.9</li>
+  <li> - in-band registration open</li>
+  <li> - Zero logs (Offline messages are stored and encrypted until you login)</li>
+</ul>
+<script type='text/javascript'> 
+title = " Free xmpp/jabber - monero.church";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,200);
+}
+scrolltitle();
+</script>
