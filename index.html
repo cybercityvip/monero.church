@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <style>
-body { background-color: #000000; }
-h1 { text-align: center; }
-ascii { color: #ffffff; }
+@font-face{
+font-family: 'test';
+src: url('MxPlus_IBM_BIOS.eot'),
+     url('MxPlus_IBM_BIOS.eot#iefix') format('embedded-opentype'),
+     url('WebPlus_IBM_BIOS.woff') format('woff'),
+     url('MxPlus_IBM_BIOS.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body { background-color: #040204; }
+h1 { text-align: center;
+     font-family:"test", monospace;
+     color: #ffffff
+}
 ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  color: #ffffff
 }
-
+gif { text-align: center }
 li {
   padding: 5px;
+  font-family:"test", monospace;
+}
+a { color: #8b0000;
+    text-decoration: none;
+    text-align: center;
+    font-family:"test", monospace;
 }
 </style>
-<ascii><pre><center>
- ███▄ ▄███▓ ▒█████   ███▄    █ ▓█████  ██▀███   ▒█████        ▄████▄   ██░ ██  █    ██  ██▀███   ▄████▄   ██░ ██ 
-▓██▒▀█▀ ██▒▒██▒  ██▒ ██ ▀█   █ ▓█   ▀ ▓██ ▒ ██▒▒██▒  ██▒     ▒██▀ ▀█  ▓██░ ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓██░ ██▒
-▓██    ▓██░▒██░  ██▒▓██  ▀█ ██▒▒███   ▓██ ░▄█ ▒▒██░  ██▒     ▒▓█    ▄ ▒██▀▀██░▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒██▀▀██░
-▒██    ▒██ ▒██   ██░▓██▒  ▐▌██▒▒▓█  ▄ ▒██▀▀█▄  ▒██   ██░     ▒▓▓▄ ▄██▒░▓█ ░██ ▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒░▓█ ░██ 
-▒██▒   ░██▒░ ████▓▒░▒██░   ▓██░░▒████▒░██▓ ▒██▒░ ████▓▒░ ██▓ ▒ ▓███▀ ░░▓█▒░██▓▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▓█▒░██▓
-░ ▒░   ░  ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░▒░▒░  ▒▓▒ ░ ░▒ ▒  ░ ▒ ░░▒░▒░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░ ▒ ░░▒░▒
-░  ░      ░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░  ░▒ ░ ▒░  ░ ▒ ▒░  ░▒    ░  ▒    ▒ ░▒░ ░░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ▒ ░▒░ ░
-░      ░   ░ ░ ░ ▒     ░   ░ ░    ░     ░░   ░ ░ ░ ░ ▒   ░   ░         ░  ░░ ░ ░░░ ░ ░   ░░   ░ ░         ░  ░░ ░
-       ░       ░ ░           ░    ░  ░   ░         ░ ░    ░  ░ ░       ░  ░  ░   ░        ░     ░ ░       ░  ░  ░
-  ░  ░                                  ░                
-</ascii></pre></center>
-<h1>A free xmpp/jabber service</h1>
+<center>
+    <img src="eye.gif" alt="eye" />
+</center>
+<h1>A free xmpp/jabber server</h1>
 <ul>
   <li> - running Prosody 0.11.9</li>
   <li> - in-band registration open</li>
   <li> - Zero logs (Offline messages are stored and encrypted until you login)</li>
 </ul>
+<footer><center>
+<a href="https://xmpp.org/getting-started/">Get started with XMPP</a>
+	</center></footer>
 <script type='text/javascript'> 
 title = " Free xmpp/jabber - monero.church";
 position = 0;
